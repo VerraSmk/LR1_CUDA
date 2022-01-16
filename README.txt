@@ -1,41 +1,46 @@
 # LR1_CUDA
 
 AMD Ryzen 5 5600U + NVIDIA GeForce RTX 3050
-Experiment for matrix size: 64
-Time spent executing by the CPU: 0.00 millseconds
-Time spent executing by the GPU events: 0.22 millseconds
-Time spent executing by the GPU: 1.00 millseconds
+MATRIX SIZE: 64
+CPU: 0.00 ms s
+GPU events: 0.21 ms s
+GPU: 1.00 ms s
 Acceleration factor: 0.00
 Relevance: true
-Experiment for matrix size: 128
-Time spent executing by the CPU: 6.00 millseconds
-Time spent executing by the GPU events: 0.39 millseconds
-Time spent executing by the GPU: 1.00 millseconds
+
+MATRIX SIZE: 128
+CPU: 6.00 ms s
+GPU events: 0.39 ms s
+GPU: 1.00 ms s
 Acceleration factor: 6.00
 Relevance: true
-Experiment for matrix size: 256
-Time spent executing by the CPU: 49.00 millseconds
-Time spent executing by the GPU events: 2.07 millseconds
-Time spent executing by the GPU: 3.00 millseconds
-Acceleration factor: 16.33
+
+MATRIX SIZE: 256
+CPU: 49.00 ms s
+GPU events: 2.09 ms s
+GPU: 2.00 ms s
+Acceleration factor: 24.50
 Relevance: true
-Experiment for matrix size: 512
-Time spent executing by the CPU: 472.00 millseconds
-Time spent executing by the GPU events: 13.75 millseconds
-Time spent executing by the GPU: 15.00 millseconds
-Acceleration factor: 31.47
+
+MATRIX SIZE: 512
+CPU: 418.00 ms s
+GPU events: 13.80 ms s
+GPU: 15.00 ms s
+Acceleration factor: 27.87
 Relevance: true
-Experiment for matrix size: 1024
-Time spent executing by the CPU: 4862.00 millseconds
-Time spent executing by the GPU events: 100.96 millseconds
-Time spent executing by the GPU: 103.00 millseconds
-Acceleration factor: 47.20
+
+MATRIX SIZE: 1024
+CPU: 4361.00 ms s
+GPU events: 101.16 ms s
+GPU: 103.00 ms s
+Acceleration factor: 42.34
 Relevance: true
-Experiment for matrix size: 2048
-Time spent executing by the CPU: 44450.00 millseconds
-Time spent executing by the GPU events: 878.87 millseconds
-Time spent executing by the GPU: 885.00 millseconds
-Acceleration factor: 50.23
+
+MATRIX SIZE: 2048
+CPU: 46018.00 ms s
+GPU events: 879.95 ms s
+GPU: 887.00 ms s
+Acceleration factor: 51.88
 Relevance: true
 
 # LR2_CUDA
