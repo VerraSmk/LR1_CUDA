@@ -36,9 +36,9 @@ __global__ void matMultCuda(float* a, float* b, int n, float* c)
         as[ty][tx] = a[ia + n * ty + tx];
         bs[ty][tx] = b[ib + n * ty + tx];
 
-        __syncthreads();    // Synchronize to make sure the matrices are loaded
+        __syncthreads();   
 
-                            // Multiply the two matrices together;
+        // Multiply two matrices together;
         for (int k = 0; k < BLOCK_SIZE; k++)
             sum += as[ty][k] * bs[k][tx];
 
@@ -94,7 +94,7 @@ double calcCuda(float* a, float* b, float* c, int N, bool flag)
 
     // print the events gpu times
     if (flag)
-        printf("Time spent executing by the GPU events: %.2f millseconds\n", gpuTime);
+        printf("GPU events: %.2f ms s\n", gpuTime);
 
     // release resources
     cudaEventDestroy(start);
@@ -106,7 +106,7 @@ double calcCuda(float* a, float* b, float* c, int N, bool flag)
     double millseconds2 = (double)(end2 - start2);
     // print the gpu times
     if (flag)
-        printf("Time spent executing by the GPU: %.2f millseconds\n", millseconds2);
+        printf("GPU: %.2f ms s\n", millseconds2);
     return millseconds2;
 }
 
@@ -125,7 +125,7 @@ double calcCPU(float* a, float* b, float* c, int N)
     clock_t end3 = clock();
     double millseconds = (double)(end3 - start3);
     // print the cpu times
-    printf("Time spent executing by the CPU: %.2f millseconds\n", millseconds);
+    printf("CPU: %.2f ms s \n", millseconds);
     return millseconds;
 }
 
@@ -141,7 +141,7 @@ int main(int argc, char* argv[])
     for (int i = 6; i < 12; i++)
     {
         int N = pow(2, i);       // matrix size is N*N
-        printf("Experiment for matrix size: %u \n", N);
+        printf("MATRIX SIZE: %u \n", N);
         // allocate host memory
         float* a = new float[N * N];
         float* b = new float[N * N];
@@ -161,7 +161,7 @@ int main(int argc, char* argv[])
             {
                 if (cpu[i * N + j] != gpu[i * N + j]) { rel = false; break; }
             }
-        printf("Relevance: %s \n", rel ? "true" : "false");
+        printf("Relevance: %s \n\n", rel ? "true" : "false");
         delete a;
         delete b;
         delete cpu;
