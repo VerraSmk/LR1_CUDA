@@ -1,6 +1,5 @@
 # LR1_CUDA
 
-
 Experiment for matrix size: 64
 Time spent executing by the CPU: 0.00 millseconds
 Time spent executing by the GPU events: 0.22 millseconds
@@ -37,3 +36,14 @@ Time spent executing by the GPU events: 878.87 millseconds
 Time spent executing by the GPU: 885.00 millseconds
 Acceleration factor: 50.23
 Relevance: true
+
+
+#LR4 Pi calc
+https://github.com/VerraSmk/LR4_PiCalc/tree/master
+
+CPU Time
+3.14178
+time= 382 ms
+GPU_1 Time
+3.14178
+time = 97.3101 ms
