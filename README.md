@@ -1,4 +1,11 @@
 # LR1_CUDA
+Был написан параллельный алгоритм перемножения матриц с использованием разбиение матрицы на матрицы 16*16 и работу уже с ними + использовалась shared память. 
+
+Алгоритм для CPU стандартный.
+Язык программирования: С/С++
+IDE: VS2019
+
+В ходе	эксперемента использовалось
 Experiment for matrix size: 64
 Time spent executing by the CPU: 0.00 millseconds
 Time spent executing by the GPU events: 0.22 millseconds
