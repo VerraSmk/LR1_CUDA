@@ -62,7 +62,7 @@ Size : 10000000
 CPU Time: 28.920900 ms
 GPU Time (improved): 8.468480 ms
 
-# <bold> LR3_SAP_CUDA </bold>
+# LR3_SAP_CUDA 
 https://github.com/VerraSmk/LR3_SAP_CUDA
 
 AMD Ryzen 5 5600U + NVIDIA GeForce RTX 3050
