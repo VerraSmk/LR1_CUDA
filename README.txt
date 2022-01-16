@@ -1,5 +1,6 @@
 # LR1_CUDA
 
+AMD Ryzen 5 5600U + NVIDIA GeForce RTX 3050
 Experiment for matrix size: 64
 Time spent executing by the CPU: 0.00 millseconds
 Time spent executing by the GPU events: 0.22 millseconds
@@ -41,6 +42,7 @@ Relevance: true
 #LR4 Pi calc
 https://github.com/VerraSmk/LR4_PiCalc/tree/master
 
+AMD Ryzen 5 5600U + NVIDIA GeForce RTX 3050
 CPU Time
 3.14178
 time= 382 ms
